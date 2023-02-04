@@ -1,0 +1,537 @@
+/*
+    Este foi meu primeiro projeto "Grande", por assim dizer, é um site completo e responsivo seja PC ou mobile, com header, main, section, footer e CSS com uso de flexbox, por ser o primeiro é obvio que o CSS não esta tão bem acabado, pode se ter confusão em nomes e não ter um codigo muito limpo, mas ele funciona e foi feito inteiramente para estudo próprio, fique a vontade para ver.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #727272;
+}
+
+header {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.imglogo {
+    height: 100px;
+}
+
+.logo {
+    max-height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.spanlogo {
+    font-size: 1.3rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist li a {
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    color: #727272;
+    text-transform: uppercase;
+}
+
+.navlist a:hover {
+    background: #41AEB3;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/bannerprincipal.jpg');
+    background-position: center;
+    background-size: cover;
+    max-height: 600px;
+}
+
+.bannertexto {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+    height: 100%;
+}
+
+.bannertexto h1 {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px black;
+    max-width: 300px;
+}
+
+.bannertexto h3 {
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px black;
+    max-width: 300px;
+}
+
+.bannerfooter {
+    display: flex;
+    justify-content: center;
+    background-color: #83dEE3;
+    height: 200px;
+    max-width: 1000px;
+    color: #4767b9bb;
+}
+
+.bannerfootertitle, .bannerfooterdesc, .horas {
+    color: white;
+}
+
+.horas1 {
+    color: white;
+}
+
+.bannerfooter1>a, .bannerfooter2>a {
+    color: white;
+}
+
+.bannerfooter1 {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bannerfooter2 {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #41AEB3;
+    padding: 20px;
+}
+
+.bannerfooter3 {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #288e93d0;
+    padding: 20px;
+}
+
+.bannerfootertitle {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.bannerfooterdesc {
+    display: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+    margin: 15px;
+}
+
+.bannerfooter a {
+    display: block;
+    padding: 5px;
+    border: 2px solid #4768B9;
+    font-size: 1.2rem;
+}
+
+.bannerfooter1 a:hover {
+    background-color: #4768B9;
+    color: #83dEE3;
+}
+
+.bannerfooter2 a:hover {
+    background-color: #4768B9;
+    color: #41AEB3;
+}
+
+.bannerfooterhoras {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.horas {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: 1px solid #4768B9;
+}
+
+.noticias {
+    display: flex;
+    justify-content: center;
+}
+
+.news {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.newstitulo {
+    margin: 20px 0px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.locais {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: #eee;
+}
+
+.localtitulo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.localtitulolinha {
+    margin-top: 5px;
+    height: 2px;
+    width: 100px;
+    background-color: #4768B9;
+}
+
+.departamentos {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.departamentos1 {
+    padding: 73px;
+    margin: 10px;
+    background-color: #4768B9;
+}
+
+.texto {
+    margin: 20px;
+    font-size: 1.1rem;
+}
+
+.linhaseparadora {
+    background-color: #4768B9;
+    height: 2px;
+    width: auto;
+}
+
+.icone {
+    display: inline;
+    width: 16px;
+    margin-right: 3px;
+}
+
+.noticiascontainer {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.titulo {
+    display: flex;
+}
+
+.data {
+    background-color: #41AEB3;
+    margin: 10px 5px 10px 0px;
+    color: white;
+    padding: 3px;
+}
+
+.comentarios {
+    background-color: #4768B9;
+    margin: 10px 10px 10px 0px;
+    color: white;
+    padding: 3px 5px;
+}
+
+img {
+    max-width: 300px;
+}
+
+.noticiasinternas {
+    max-width: 300px;
+}
+
+a>h3 {
+    margin: 5px 0px;
+}
+
+a>p {
+    margin: 5px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+.footer_extra {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    justify-content: space-around;
+}
+
+.footer_util1 {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6FC4C8;
+}
+
+.footer_util2 {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #42A5AA;
+    align-items: center;
+}
+
+.footer_util3 {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0A848A;
+    align-items: center;
+}
+
+.link {
+    color: white;
+}
+
+.coluna {
+    flex-direction: column;
+}
+
+.rodape_geral {
+    display: flex;
+    flex: 1;
+}
+
+.rodape_geral1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.rodape_geral1 h3, .rodape_geral1 p {
+    color: white;
+}
+
+.rodape_geral1 h3 {
+    font-weight: 400;
+}
+
+.texto_interno {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.texto_interno li {
+    list-style: none;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 5px 5px 0px 5px;
+    font-size: 1rem;
+}
+
+.texto_interno p {
+    color: #7D96D1;
+    font-size: 1rem;
+    padding: 0px 5px;
+    margin: 0px 0px 0px 5px;
+}
+
+.resumo>p {
+    color: white;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.contato {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.contato div {
+    color: white;
+    font-size: 1rem;
+}
+
+.contato1 {
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.redes {
+    margin: 10px 0px;
+}
+
+.redes img {
+    padding: 10px;
+    margin-right: 5px;
+    max-width: 70px;
+}
+
+.menuMobile {
+    display: none;
+}
+
+@media (max-width:840px) {
+    .bannertexto {
+        flex: 0;
+    }
+    .bannertexto h1 {
+        font-size: 2.5rem;
+        padding: 10px;
+        margin: 0px;
+    }
+    .bannertexto h3 {
+        font-size: 1.3rem;
+        padding: 10px;
+        margin: 0px;
+    }
+    .bannerfooter, .bannerfooter1, .bannerfooter2, .bannerfooter3 {
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .bannerfooter1 div, .bannerfooter2 div, .bannerfooter3 div {
+        font-size: 1.1rem;
+        flex-wrap: nowrap;
+    }
+    .banner {
+        justify-content: center;
+        height: auto;
+    }
+    .noticias {
+        margin-top: 100px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .noticiascontainer {
+        padding: 10px;
+    }
+    .news {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+    .footer_extra, .rodape_geral {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .rodape_geral1 {
+        padding-top: 15px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    header {
+        height: auto;
+    }
+
+    .navlist {
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        margin: 0px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        transition: .8s;
+        overflow-y: hidden;
+        height: 0px;
+        overflow-y: auto;
+    }
+
+    .navlist a{
+        padding: 5px 10px;
+        margin: 0px 10px;
+    }
+
+    .menuMobile {
+        background-color: #41AEB3;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 40px 20px;
+        border-radius: 5px;
+    }
+    .mmLine {
+        margin-top: 5px;
+        width: 40px;
+        height: 2px;
+        background-color: white;
+    }
+    .mmLine1 {
+        width: 40px;
+        height: 2px;
+        background-color: white;
+    }
+}
